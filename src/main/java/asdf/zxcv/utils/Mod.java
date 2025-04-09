@@ -1,7 +1,7 @@
 package asdf.zxcv.utils;
 
-import asdf.zxcv.utils.commands.Whoami;
-import asdf.zxcv.utils.modules.WhoamiOnJoin;
+import asdf.zxcv.utils.modules.*;
+import asdf.zxcv.utils.commands.*;
 import meteordevelopment.meteorclient.addons.GithubRepo;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.commands.Commands;
@@ -20,6 +20,7 @@ public class Mod extends MeteorAddon {
     public void onInitialize() {
         LOG.info("zxcv-utils init");
 
+        Modules.get().add(new Piss());
         Modules.get().add(new WhoamiOnJoin());
         Commands.add(new Whoami());
     }
