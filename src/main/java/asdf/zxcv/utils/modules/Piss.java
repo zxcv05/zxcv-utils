@@ -135,7 +135,7 @@ public class Piss extends Module {
 
   private NbtList getNbtSpeed() {
     Vec3d rot = mc.cameraEntity.getRotationVector();
-    double y = Math.min(0, rot.y);
+    double y = Math.min(0.5, rot.y);
 
     NbtList NbtSpeed = new NbtList();
     NbtSpeed.add(NbtDouble.of(speed.get() * rot.x));
