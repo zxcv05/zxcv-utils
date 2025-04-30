@@ -23,6 +23,7 @@ public class Mod extends MeteorAddon {
         Modules.get().add(new Piss());
         Modules.get().add(new WhoamiOnJoin());
         Commands.add(new Whoami());
+        Commands.add(new Login());
     }
 
     @Override
